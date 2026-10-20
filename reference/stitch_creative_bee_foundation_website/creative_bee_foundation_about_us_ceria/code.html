@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tentang Kami - Creative Bee Foundation</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed-variant": "#6e3900",
+            "on-primary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#e2d8d2",
+            "on-secondary-fixed-variant": "#005049",
+            "surface-container-low": "#fcf2eb",
+            "surface-variant": "#eae1da",
+            "on-surface-variant": "#554336",
+            "on-secondary-container": "#006f66",
+            "error-container": "#ffdad6",
+            "tertiary-container": "#c05400",
+            "secondary": "#006a61",
+            "on-error-container": "#93000a",
+            "outline-variant": "#dbc2b0",
+            "surface-container": "#f6ece6",
+            "primary": "#8d4b00",
+            "surface-container-highest": "#eae1da",
+            "surface-tint": "#904d00",
+            "surface-container-high": "#f0e6e0",
+            "background": "#fff8f5",
+            "on-secondary": "#ffffff",
+            "surface": "#fff8f5",
+            "tertiary": "#994100",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#ffdbca",
+            "primary-fixed-dim": "#ffb77d",
+            "surface-bright": "#fff8f5",
+            "inverse-surface": "#342f2b",
+            "tertiary-fixed-dim": "#ffb690",
+            "on-primary-container": "#fffbff",
+            "secondary-fixed": "#89f5e7",
+            "on-tertiary-container": "#fffbff",
+            "primary-fixed": "#ffdcc3",
+            "inverse-on-surface": "#f9efe8",
+            "outline": "#887364",
+            "on-secondary-fixed": "#00201d",
+            "primary-container": "#b15f00",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-background": "#1f1b17",
+            "on-primary-fixed": "#2f1500",
+            "on-tertiary-fixed-variant": "#783200",
+            "on-surface": "#1f1b17",
+            "on-tertiary-fixed": "#341100",
+            "surface-container-lowest": "#ffffff",
+            "secondary-container": "#86f2e4",
+            "error": "#ba1a1a",
+            "inverse-primary": "#ffb77d"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "margin": "3rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Outfit"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Outfit"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Outfit"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Outfit"],
+            "headline-sm": ["Outfit"],
+            "headline-md": ["Outfit"],
+            "label-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .shadow-warm-1 {
+      box-shadow: 0 4px 20px -2px rgba(217, 119, 6, 0.08), 0 2px 6px -1px rgba(28, 25, 23, 0.04);
+    }
+    .shadow-warm-2 {
+      box-shadow: 0 12px 28px -4px rgba(217, 119, 6, 0.14), 0 4px 10px -2px rgba(13, 148, 136, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- ================= TOP NAVBAR ================= -->
+<header class="sticky top-0 z-50 bg-surface/95 backdrop-blur-md bg-surface-container-low shadow-sm">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-space-md">
+<!-- Brand Logo -->
+<a class="flex items-center gap-space-sm group" href="#">
+<span class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="cruelty_free">cruelty_free</span>
+</span>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">Creative Bee Foundation</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<!-- 'Our Mission' mapped to active destination for About page -->
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg transition-colors" href="#about">Our Mission</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="#stories">Impact Stories</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-lg text-label-lg" href="#volunteer">Get Involved</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-space-sm">
+<button aria-label="Favorite" class="p-2 text-on-surface-variant hover:text-primary transition-colors rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button aria-label="Search" class="p-2 text-on-surface-variant hover:text-primary transition-colors rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<a class="hidden sm:inline-flex items-center justify-center rounded-full bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-container px-space-md py-2 font-label-lg text-label-lg font-semibold transition-all scale-[1.02] active:scale-[0.98]" href="#volunteer">
+          Volunteer
+        </a>
+<a class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primary-container to-tertiary-container hover:opacity-95 text-on-primary-container px-space-lg py-2 font-label-lg text-label-lg font-semibold shadow-warm-1 transition-all scale-[1.02] active:scale-[0.98]" href="#donate">
+          Donate Now
+        </a>
+</div>
+</div>
+</header>
+<!-- ================= HERO SECTION ================= -->
+<section class="relative overflow-hidden py-space-xl md:py-24 bg-gradient-to-b from-surface-container-low/60 via-background to-background">
+<!-- Atmospheric Bubbles / Sun Glow -->
+<div class="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-20 w-80 h-80 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col items-start space-y-space-md">
+<!-- Playful Badge Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm tracking-wide">
+<span>🐝</span> Sahabat Kebaikan
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm tracking-wide">
+<span>🌻</span> Komunitas Ceria &amp; Guyub
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span>✨</span> 100% Terbuka &amp; Ramah
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-background font-bold tracking-tight">
+            Kenalan dengan <span class="text-primary underline decoration-primary-fixed-dim decoration-wavy decoration-2">Sahabat Lebah!</span> 🐝✨
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Menebar Manisnya Kebaikan, Satu Senyuman Sekaligus. Kami percaya kepedulian sosial tak harus terasa kaku dan berat—ia bisa bersemi ceria seperti tawa anak-anak di taman bunga yang mekar.
+          </p>
+<!-- Interactive Stat Pills -->
+<div class="pt-space-sm flex flex-wrap gap-space-md w-full">
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-full py-2 px-space-md flex items-center gap-3 shadow-warm-1">
+<span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-md text-label-md">14K</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Toples Madu Kebaikan Terbagi</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-full py-2 px-space-md flex items-center gap-3 shadow-warm-1">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold font-label-md text-label-md">850+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Relawan Tersenyum</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Bento / Friendly Illustration Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md bg-surface-container-lowest rounded-xl p-space-md shadow-warm-2 border border-outline-variant/30">
+<div class="overflow-hidden rounded-lg aspect-square relative">
+<img class="w-full h-full object-cover" data-alt="A joyful, diverse group of smiling community volunteers wearing bright honey-amber aprons and pastel shirts planting a community garden and distributing wholesome meals to cheerful children under radiant warm golden hour sunlight, soft organic aesthetic, modern friendly documentary photography, rich warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaofMSFqWnSIGBShFcQfpxx0hMwsbEQd7jyKpPnQ_X6d1g7zaxYtqlWDRP-pkuZ-JzYMR7Wz7D_mycgRLR6XKim8uuEoiyZ2iSa9xC30u-OuxaKgxg9ZNzx1uR8yetrtZWdzKTeKdVXHnACxkskGuZtOWuZ3zCj9q4Z14-_KpY2EThixOss6_gLhWTbgJHCaVC0SIlVBFZJJ0Z79y-BLGnkNpryd51S1T7sz9jgPG-_Jnhnb_OyEUt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md p-space-sm rounded-full flex items-center justify-between shadow-warm-1">
+<div class="flex items-center gap-2 pl-2">
+<span class="text-xl">🍯</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Energi Positif Berkelanjutan</span>
+</div>
+<span class="px-3 py-1 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm">Semerbak</span>
+</div>
+</div>
+<!-- Floating Micro Accent -->
+<div class="absolute -top-4 -right-4 bg-primary-fixed text-on-primary-fixed-variant px-4 py-2 rounded-full font-label-md text-label-md font-bold shadow-warm-1 flex items-center gap-1.5 border border-primary-fixed-dim">
+<span class="material-symbols-outlined text-sm" data-icon="sparkles">arrow_back_ios_new</span> 100% Cinta Hati
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= KENAPA SIMBOL LEBAH? ================= -->
+<section class="py-space-xl bg-surface-container-lowest border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-xs">
+          Filosofi Hangat
+        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold">
+          Kenapa Simbol Lebah? 🐝🍯
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Lebah adalah teladan alam terbaik tentang harmoni, ketulusan kerja, dan manisnya kontribusi tanpa merusak sekitar.
+        </p>
+</div>
+<!-- Honeycomb-inspired Interactive Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg p-space-lg border border-outline-variant/30 shadow-warm-1 hover:shadow-warm-2 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-3xl mb-space-md group-hover:scale-110 transition-transform">
+              🐝
+            </div>
+<div class="inline-block px-3 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold mb-2">
+              Satu Sarang, Sejuta Karsa
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">
+              Gotong Royong Guyub
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bergerak bersama tanpa pamrih. Dari yang kecil hingga yang besar, setiap lebah saling menjaga, memastikan tak ada satu pun saudara yang kelaparan atau tertinggal di belakang.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/30 flex items-center text-primary font-label-md text-label-md font-bold">
+<span>Kolaborasi Berdaya</span>
+<span class="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg p-space-lg border border-outline-variant/30 shadow-warm-1 hover:shadow-warm-2 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-3xl mb-space-md group-hover:scale-110 transition-transform">
+              🍯
+            </div>
+<div class="inline-block px-3 py-0.5 rounded-full bg-secondary-fixed/60 text-secondary font-label-sm text-label-sm font-bold mb-2">
+              Kemurnian &amp; Nutrisi
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">
+              Memberi Manfaat Manis
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Membantu sesama dengan ketulusan dan energi positif. Bantuan kami bukan sekadar angka, melainkan sari pati kasih sayang yang menguatkan asa serta menghadirkan rasa tentram.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/30 flex items-center text-secondary font-label-md text-label-md font-bold">
+<span>Hasil Nyata Manis</span>
+<span class="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg p-space-lg border border-outline-variant/30 shadow-warm-1 hover:shadow-warm-2 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-3xl mb-space-md group-hover:scale-110 transition-transform">
+              🌸
+            </div>
+<div class="inline-block px-3 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm font-bold mb-2">
+              Kebaikan Berkelanjutan
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">
+              Menjaga Harmoni
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Menebar kebaikan tanpa merusak kuncup bunga. Setiap langkah program kami merangkul martabat masyarakat lokal, memuliakan alam, dan menyuburkan kemandirian jangka panjang.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/30 flex items-center text-tertiary font-label-md text-label-md font-bold">
+<span>Ekosistem Berkelanjutan</span>
+<span class="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= MISI CERIA KAMI ================= -->
+<section class="py-space-xl bg-background" id="projects">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4">
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Langkah Terarah
+          </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold mt-2">
+            4 Misi Ceria Kami 🌱
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Gerakan nyata yang kami rawat setiap hari bersama para sahabat relawan.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<!-- Pastel Bento Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Misi 1: Gizi Anak -->
+<div class="bg-surface-container-low rounded-lg p-space-md border border-outline-variant/30 shadow-warm-1 flex flex-col justify-between hover:-translate-y-1 transition-all">
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-2xl shadow-sm">
+                🥛
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Tumbuh Kuat
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+              Gizi Anak Ceria
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Distribusi asupan gizi sehat, susu madu bernutrisi, dan sarapan ceria untuk ribuan balita di pelosok desa.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs bg-surface-container-lowest rounded-full px-3 py-1.5 flex items-center justify-between text-primary font-label-sm text-label-sm font-bold">
+<span>Target: 20.000 Paket</span>
+<span class="material-symbols-outlined text-sm" data-icon="nutrition">nutrition</span>
+</div>
+</div>
+<!-- Misi 2: Beasiswa Cilik -->
+<div class="bg-surface-container-low rounded-lg p-space-md border border-outline-variant/30 shadow-warm-1 flex flex-col justify-between hover:-translate-y-1 transition-all">
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-2xl shadow-sm">
+                🎨
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm">
+                Raih Cita
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+              Beasiswa Cilik
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Bantuan alat mewarnai, tas sekolah gembira, serta pendampingan belajar kreatif tanpa pungutan biaya.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs bg-surface-container-lowest rounded-full px-3 py-1.5 flex items-center justify-between text-secondary font-label-sm text-label-sm font-bold">
+<span>500+ Siswa Aktif</span>
+<span class="material-symbols-outlined text-sm" data-icon="school">school</span>
+</div>
+</div>
+<!-- Misi 3: Kemandirian Ibu -->
+<div class="bg-surface-container-low rounded-lg p-space-md border border-outline-variant/30 shadow-warm-1 flex flex-col justify-between hover:-translate-y-1 transition-all">
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-2xl shadow-sm">
+                🧵
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm">
+                Ibu Berdaya
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+              Kemandirian Ibu
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pelatihan kerajinan, mikrousaha olahan madu, dan kelas literasi finansial ceria untuk ibu rumah tangga tangguh.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs bg-surface-container-lowest rounded-full px-3 py-1.5 flex items-center justify-between text-tertiary font-label-sm text-label-sm font-bold">
+<span>32 Kelompok Usaha</span>
+<span class="material-symbols-outlined text-sm" data-icon="storefront">storefront</span>
+</div>
+</div>
+<!-- Misi 4: Aksi Cepat Tanggap -->
+<div class="bg-surface-container-low rounded-lg p-space-md border border-outline-variant/30 shadow-warm-1 flex flex-col justify-between hover:-translate-y-1 transition-all">
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="w-12 h-12 rounded-full bg-primary-fixed-dim flex items-center justify-center text-2xl shadow-sm">
+                🚀
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Sigap &amp; Hangat
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+              Aksi Cepat Tanggap
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Respon darurat bencana alam dengan dapur hangat keliling, tenda ramah anak, dan pertolongan pertama terpadu.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs bg-surface-container-lowest rounded-full px-3 py-1.5 flex items-center justify-between text-primary font-label-sm text-label-sm font-bold">
+<span>Siaga 24/7 Wilayah</span>
+<span class="material-symbols-outlined text-sm" data-icon="emergency">emergency</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= TIM SAHABAT LEBAH ================= -->
+<section class="py-space-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="text-center max-w-xl mx-auto mb-space-xl">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-xs">
+          Wajah di Balik Senyuman
+        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold">
+          Tim Sahabat Lebah 💛
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Mereka yang menyalakan semangat setiap hari dengan hati tulus dan tangan terbuka.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Relawan 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col items-center text-center shadow-warm-1 border border-outline-variant/30 group hover:shadow-warm-2 transition-all">
+<div class="relative w-28 h-28 mb-space-md">
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A portrait of a warm smiling Indonesian young woman wearing a sunflower yellow bandana and cheerful casual polo shirt, soft outdoor morning natural lighting, genuine joyous smile, high key modern approachable community portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxAi9wSuNhtA9C_BpYyOpFbtWaZ3SC_dufgQWkf-Z09jVzehMilTS9SBLdl6RqHnFyKYCZbl8P6jFB-8-T2bahyJLZLCa0K0a7J620tzcJjGiGsThSsmg0CFg8h-fNwLJSjInB2yQcuITjXaWZEXzcsmsiOGE5BibvpcUvlALIRu92Hg3N3R7-CmQq5XL44aLskjB3NNJ_3riMNO4ANsmCCjdkOx6b-58oosEyrADJywMvEN21u3eB"/>
+</div>
+<span class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-sm shadow-sm">
+              😊
+            </span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold mb-1">
+            Koordinator Senyuman
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Nadhira Rahma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            "Melihat tawa anak-anak adalah alasan terbaik untuk bangun pagi dan melangkah."
+          </p>
+</div>
+<!-- Relawan 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col items-center text-center shadow-warm-1 border border-outline-variant/30 group hover:shadow-warm-2 transition-all">
+<div class="relative w-28 h-28 mb-space-md">
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A smiling friendly middle aged Indonesian chef wearing clean white apron and warm friendly baker hat standing in a bright sunlit kitchen, joyful authentic portrait, soft glowing morning sun, vibrant culinary philanthropy vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuEUvv-HZphupV3i2m7sdVKWNLXwo5jc7WFoRv5eeEKXeX6CPWgC6nM3w-XzwATF1KfPsfNskq93I4pw62V-rzz__jpT79XGJnByYtEnbusiC5UaaVZny40AXhcIUH3bXi9v_GTS8-J3y3zVPiYj6sonLOHcinf-vcyuLyoENCEygihj7fvkR7_ybw0BHEz8LaCArw0B0CyvyFtk8EiE_9R1AUJr-ZPN6lD_MBOJOhpyNZ7YmCYeVC"/>
+</div>
+<span class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-sm shadow-sm">
+              🍲
+            </span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold mb-1">
+            Koki Dapur Berkah
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pak Budi Santoso</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            "Makanan bergizi yang dimasak penuh kasih adalah pelukan paling hangat untuk jiwa."
+          </p>
+</div>
+<!-- Relawan 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col items-center text-center shadow-warm-1 border border-outline-variant/30 group hover:shadow-warm-2 transition-all">
+<div class="relative w-28 h-28 mb-space-md">
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A compassionate cheerful young female pediatrician with stethoscope around her neck smiling warmly, wearing pastel mint scrubs, bright clinic setting with colorful child friendly wall drawings in the background, radiant natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdh66qIln-cT_FDCd-FQNQ8kc4T7y-UyRIk9zyIqvxSpEceOyGa_589WuVgnhMXEB-OXA7MeDM8YoCLC7b6jvNXUNy6kVfu7AyGpH0ixW18-ytUz5SUzGFwgm_pkd1x6LZ8SUt4pLz6eTsBVSznSQdInE8N91OaVwAcyILDrl_j3TX0oL5XVW4mQSxlr3rhHBb1uVyqks2dwFypQRKMH2LD3iUbuu4_bGFOEDyCTNaKJBGwLLeatyl"/>
+</div>
+<span class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-sm shadow-sm">
+              🩺
+            </span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold mb-1">
+            Dokter Sahabat Balita
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">dr. Alisia Tan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            "Memeriksa adik-adik kecil selalu jadi obat lelah paling mujarab di setiap akhir pekan."
+          </p>
+</div>
+<!-- Relawan 4 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col items-center text-center shadow-warm-1 border border-outline-variant/30 group hover:shadow-warm-2 transition-all">
+<div class="relative w-28 h-28 mb-space-md">
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A vibrant energetic young man holding a camera and a notebook outdoors in a village community school, wearing a warm earth tone jacket, joyful approachable expression, sun flare natural lighting, modern social impact storyteller aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqT0haB-umP_cENaEgfcrdmqO94aOQ-zcTC17Nc6HPhG8wAOSpAkL48rxyIKd7E3QlNzME7vHUgr6C-HTMhRBEY1SarcA9HKm3m3BWyR-bW8lyzPoihiNDJ9Lw_ai3gqrIvibRynK9ttUox8JKC_9jkbD68rGxNMybPBERLGSbgei6N05XBxhOgaQ1LS-fMfOwIr_vY5p75uyVJ8gFUA3rZKf3X8Nz3FQ9fndpX0svzmUbaYL7RpAl"/>
+</div>
+<span class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-sm shadow-sm">
+              📸
+            </span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm font-bold mb-1">
+            Penutur Cerita Ceria
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Reza Dirgantara</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            "Merekam kisah perjuangan warga dan menjembatani harapan dengan para donatur baik."
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PRINSIP KETERBUKAAN CERIA ================= -->
+<section class="py-space-xl bg-surface-container-low/50">
+<div class="max-w-5xl mx-auto px-space-lg md:px-margin">
+<div class="bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl border border-outline-variant/30 shadow-warm-1">
+<div class="flex flex-col lg:flex-row items-center gap-space-lg">
+<div class="w-20 h-20 rounded-full bg-secondary-fixed flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="verified_user">verified_user</span>
+</div>
+<div class="flex-1 text-center lg:text-left">
+<div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary-fixed/60 text-secondary font-label-sm text-label-sm font-bold">
+                Transparansi 100% Bersih
+              </span>
+<span class="px-3 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">
+                Audit Terbuka Berkala
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Setiap Tetes Madu Kebaikan Tercatat Jelas
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Kami percaya kepercayaan adalah amanah paling berharga. Setiap rupiah donasi dan dukungan diaudit independen secara berkala, dilaporkan dalam infografik ceria yang mudah dibaca oleh siapa pun.
+            </p>
+</div>
+<!-- Micro Certification Badges -->
+<div class="flex flex-col gap-2 w-full lg:w-auto">
+<div class="bg-surface-container rounded-full px-4 py-2 flex items-center gap-3 border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary" data-icon="task_alt">task_alt</span>
+<div class="text-left">
+<p class="font-label-sm text-label-sm text-on-surface font-bold">WTP 3 Tahun Beruntun</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Kantor Akuntan Publik Resmi</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-full px-4 py-2 flex items-center gap-3 border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary" data-icon="lock_open">lock_open</span>
+<div class="text-left">
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Laporan Real-Time</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Diperbarui setiap hari Jumat</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CTA BANNER CERIA ================= -->
+<section class="py-space-xl bg-gradient-to-r from-primary-fixed-dim/40 via-surface-container-low to-secondary-fixed/30 relative overflow-hidden" id="volunteer">
+<div class="max-w-5xl mx-auto px-space-lg md:px-margin text-center relative z-10">
+<span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-warm-1 mb-space-md">
+<span>🌻</span> Selalu Ada Ruang untuk Kebaikan
+      </span>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface font-bold tracking-tight">
+        Pintu Kami Selalu Terbuka untuk Teman Baru! 🤗💛
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-space-sm mb-space-lg">
+        Mau ikut terjun ke lapangan, menyumbang keahlian desain, atau sekadar berbagi cerita hangat? Mari bergandengan tangan bersama Sahabat Lebah!
+      </p>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<a class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary-container px-space-xl py-3.5 font-label-lg text-label-lg font-bold shadow-warm-2 hover:scale-[1.02] active:scale-[0.98] transition-all" href="#volunteer-form">
+<span class="material-symbols-outlined text-xl" data-icon="volunteer_activism">volunteer_activism</span>
+          Gabung Jadi Relawan
+        </a>
+<a class="inline-flex items-center gap-2 rounded-full bg-surface-container-lowest hover:bg-surface-container border border-outline-variant/40 text-on-surface px-space-lg py-3.5 font-label-lg text-label-lg font-bold shadow-warm-1 hover:scale-[1.02] active:scale-[0.98] transition-all" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-xl" data-icon="chat">chat</span>
+          Sapa Kami di WhatsApp
+        </a>
+</div>
+</div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-surface-container-low border-t border-outline-variant/20">
+<div class="w-full max-w-7xl mx-auto px-space-lg md:px-margin py-space-xl flex flex-col space-y-space-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md">
+<!-- Logo and Slogan -->
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">Creative Bee Foundation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Menumbuhkan senyuman, merawat kebersamaan di seluruh nusantara.
+          </p>
+</div>
+<!-- Social Media Pills -->
+<div class="flex items-center gap-space-sm">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="favorite">favorite</span>
+</a>
+</div>
+</div>
+<!-- Links Cluster -->
+<div class="flex flex-wrap gap-x-space-lg gap-y-space-sm pt-space-md border-t border-outline-variant/30">
+<a class="font-label-md text-label-md text-primary font-semibold hover:text-secondary transition-colors duration-200" href="#">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Transparency &amp; Financials</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Annual Reports</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Community Chapters</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Careers</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Terms of Kindness</a>
+</div>
+<!-- Copyright Text -->
+<div class="pt-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          © 2025 Creative Bee Foundation. Spreading joyful, community-first vitality worldwide.
+        </p>
+</div>
+</div>
+</footer>
+</body></html>

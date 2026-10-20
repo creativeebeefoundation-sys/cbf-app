@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-headline: var(--font-outfit), "Outfit", sans-serif;
+
+  --color-primary: #8d4b00;
+  --color-primary-container: #b15f00;
+  --color-primary-fixed: #ffdcc3;
+  --color-primary-fixed-dim: #ffb77d;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffbff;
+  --color-on-primary-fixed: #2f1500;
+  --color-on-primary-fixed-variant: #6e3900;
+  --color-inverse-primary: #ffb77d;
+
+  --color-secondary: #006a61;
+  --color-secondary-container: #86f2e4;
+  --color-secondary-fixed: #89f5e7;
+  --color-secondary-fixed-dim: #6bd8cb;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #006f66;
+  --color-on-secondary-fixed: #00201d;
+  --color-on-secondary-fixed-variant: #005049;
+
+  --color-tertiary: #994100;
+  --color-tertiary-container: #c05400;
+  --color-tertiary-fixed: #ffdbca;
+  --color-tertiary-fixed-dim: #ffb690;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fffbff;
+  --color-on-tertiary-fixed: #341100;
+  --color-on-tertiary-fixed-variant: #783200;
+
+  --color-surface: #fff8f5;
+  --color-surface-dim: #e2d8d2;
+  --color-surface-bright: #fff8f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fcf2eb;
+  --color-surface-container: #f6ece6;
+  --color-surface-container-high: #f0e6e0;
+  --color-surface-container-highest: #eae1da;
+  --color-surface-variant: #eae1da;
+
+  --color-on-surface: #1f1b17;
+  --color-on-surface-variant: #554336;
+  --color-inverse-surface: #342f2b;
+  --color-inverse-on-surface: #f9efe8;
+
+  --color-outline: #887364;
+  --color-outline-variant: #dbc2b0;
+  --color-surface-tint: #904d00;
+
+  --color-background: #fff8f5;
+  --color-on-background: #1f1b17;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 3rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fff8f5;
+  --foreground: #1f1b17;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-headline {
+  font-family: var(--font-outfit), "Outfit", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1;
+}
+
+.warm-glow-shadow {
+  box-shadow: 0 10px 25px -4px rgba(217, 119, 6, 0.16), 0 4px 10px -2px rgba(13, 148, 136, 0.08);
+}
+
+.amber-btn-shadow {
+  box-shadow: 0 8px 20px -2px rgba(245, 158, 11, 0.38);
+}
+
+.card-hover-pop {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.card-hover-pop:hover {
+  transform: translateY(-5px) scale(1.01);
 }

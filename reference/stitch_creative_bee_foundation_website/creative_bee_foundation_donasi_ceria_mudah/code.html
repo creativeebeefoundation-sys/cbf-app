@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halaman Donasi &amp; Penyaluran Kebaikan - Creative Bee Foundation</title>
+<!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus Jakarta Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#f0e6e0",
+            "surface-container-highest": "#eae1da",
+            "tertiary-container": "#c05400",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#89f5e7",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f9efe8",
+            "inverse-surface": "#342f2b",
+            "surface-container-low": "#fcf2eb",
+            "surface-container": "#f6ece6",
+            "on-tertiary-fixed-variant": "#783200",
+            "surface-bright": "#fff8f5",
+            "primary-container": "#b15f00",
+            "primary-fixed": "#ffdcc3",
+            "surface-dim": "#e2d8d2",
+            "on-secondary-fixed-variant": "#005049",
+            "tertiary": "#994100",
+            "on-tertiary-fixed": "#341100",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#8d4b00",
+            "on-primary-fixed-variant": "#6e3900",
+            "on-error": "#ffffff",
+            "surface-variant": "#eae1da",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-tertiary-container": "#fffbff",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#ffb690",
+            "on-primary-container": "#fffbff",
+            "on-surface-variant": "#554336",
+            "on-primary-fixed": "#2f1500",
+            "inverse-primary": "#ffb77d",
+            "background": "#fff8f5",
+            "on-secondary-container": "#006f66",
+            "surface": "#fff8f5",
+            "on-secondary-fixed": "#00201d",
+            "secondary": "#006a61",
+            "primary-fixed-dim": "#ffb77d",
+            "outline": "#887364",
+            "on-background": "#1f1b17",
+            "secondary-container": "#86f2e4",
+            "on-tertiary": "#ffffff",
+            "outline-variant": "#dbc2b0",
+            "surface-tint": "#904d00",
+            "on-surface": "#1f1b17",
+            "tertiary-fixed": "#ffdbca",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Outfit"],
+            "headline-lg": ["Outfit"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Outfit"],
+            "headline-sm": ["Outfit"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Outfit"],
+            "headline-xl": ["Outfit"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-warm-card {
+      box-shadow: 0 10px 30px -4px rgba(217, 119, 6, 0.08), 0 4px 12px -2px rgba(28, 25, 23, 0.03);
+    }
+    .interactive-card-hover {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .interactive-card-hover:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 18px 36px -6px rgba(217, 119, 6, 0.14), 0 6px 14px -3px rgba(0, 106, 97, 0.07);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-primary">
+<!-- ==================== TOP NAVIGATION BAR (Shared Component) ==================== -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-container-high bg-surface-container-low/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-space-md">
+<!-- Brand Logo & Name -->
+<a class="flex items-center gap-3 group" href="#">
+<img alt="Creative Bee Foundation Logo" class="h-11 w-auto object-contain transform group-hover:rotate-6 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1VIb6MTrXlVtZLvymsrWAAeTv1dX6aeUtRulV3ppOLmo33qo9OJg8Pp2UpDU7jCjXq8r1TkKdRQRe2adJwp8rJJfnW3xryksrU1-BYip5OYfhs52nuDDTQUay165gECWSwv6bJ2JMo1TRGPeoh3OjrNSEEPV3IMt-ph8Prb7u3YSSJ1jeF2NmrVMFc9gND7qHQRSB5atdIuDzYzPCrx7u6uPLZKyw8-v8RdIzEx9kS_XkPLjOTX6peI_fw"/>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary font-bold tracking-tight">Creative Bee Foundation</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-outline-variant font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#mission">Our Mission</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#projects">Projects</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#impact">Impact Stories</a>
+<a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary dark:border-inverse-primary pb-1" href="#get-involved">Get Involved</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<!-- Icons -->
+<button aria-label="Favorites" class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button aria-label="Search" class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors hidden sm:inline-flex">
+<span class="material-symbols-outlined">search</span>
+</button>
+<!-- Volunteer Secondary Button -->
+<a class="hidden lg:inline-flex items-center px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-lg text-label-lg font-semibold hover:bg-secondary-fixed-dim transition-colors duration-150" href="#volunteer">
+          Volunteer
+        </a>
+<!-- Donate Now Primary Action -->
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md shadow-primary/20 scale-[1.02] active:scale-[0.98] transition-all duration-200" href="#donation-box">
+<span>Donate Now</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ==================== MAIN CONTENT AREA ==================== -->
+<main class="w-full overflow-hidden">
+<!-- HERO SECTION -->
+<section class="relative pt-8 pb-12 md:pt-14 md:pb-16 px-space-lg md:px-margin max-w-7xl mx-auto">
+<!-- Playful Decorative Ambient Badges -->
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md mb-4 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-base text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span>Program Berbagi Senyum 100% Transparan &amp; Terverifikasi</span>
+<span class="text-xs">✨</span>
+</div>
+<h1 class="font-headline-xl md:text-headline-xl text-headline-xl-mobile text-on-surface font-extrabold tracking-tight mb-4">
+          Tebarkan Manisnya <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-primary to-secondary">Kebaikan Hari Ini</span> 🐝💛
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Penyaluran donasi kilat, ceria, dan penuh kegembiraan. Bersama Creative Bee Foundation, setiap butir madu kebaikanmu langsung sampai ke tangan mereka yang membutuhkan.
+        </p>
+<!-- Live Ticker Pill -->
+<div class="mt-6 flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-xs font-label-md bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full shadow-sm">
+<span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 ring-4 ring-emerald-100"></span>
+<span class="text-secondary font-bold">1.482 Donatur Ceria</span> bergabung minggu ini
+          <span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">Rp 482.500.000 tersalurkan langsung</span>
+</div>
+</div>
+<!-- ==================== 3-STEP INTERACTIVE DONATION BOX ==================== -->
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-xl p-6 sm:p-10 custom-warm-card border border-primary/10 relative" id="donation-box">
+<!-- Floating Cheerful Mascot Badge -->
+<div class="absolute -top-5 right-6 sm:right-12 bg-gradient-to-br from-amber-400 to-primary text-on-primary px-4 py-1.5 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-1.5 transform rotate-2">
+<span>🐝</span>
+<span class="font-bold">Mudah &amp; Cepat &lt; 1 Menit</span>
+</div>
+<form id="donation-form" onsubmit="event.preventDefault(); triggerDonationSuccess();">
+<!-- STEP 1: PILIH MISI FAVORITMU -->
+<div class="mb-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-primary-fixed text-primary font-bold text-sm">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pilih Misi Favoritmu</h2>
+<span class="text-xs text-on-surface-variant font-label-md hidden sm:inline">(Tujuan penyaluran)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+<!-- Mission 1 -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="mission" type="radio" value="nutrisi"/>
+<div class="p-3.5 rounded-2xl border-2 border-surface-container-high bg-surface-container-low peer-checked:border-primary peer-checked:bg-primary-fixed/20 peer-checked:shadow-sm interactive-card-hover flex flex-col items-center text-center h-full justify-center">
+<span class="text-2xl mb-1.5">🍎</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Nutrisi Balita</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Cegah stunting pedesaan</span>
+</div>
+</label>
+<!-- Mission 2 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="mission" type="radio" value="beasiswa"/>
+<div class="p-3.5 rounded-2xl border-2 border-surface-container-high bg-surface-container-low peer-checked:border-secondary peer-checked:bg-secondary-fixed/30 peer-checked:shadow-sm interactive-card-hover flex flex-col items-center text-center h-full justify-center">
+<span class="text-2xl mb-1.5">📚</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Beasiswa Pintar</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Alat tulis &amp; SPP adik asuh</span>
+</div>
+</label>
+<!-- Mission 3 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="mission" type="radio" value="modal"/>
+<div class="p-3.5 rounded-2xl border-2 border-surface-container-high bg-surface-container-low peer-checked:border-tertiary-container peer-checked:bg-tertiary-fixed/30 peer-checked:shadow-sm interactive-card-hover flex flex-col items-center text-center h-full justify-center">
+<span class="text-2xl mb-1.5">💼</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Modal Mandiri</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Gerobak &amp; usaha dhuafa</span>
+</div>
+</label>
+<!-- Mission 4 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="mission" type="radio" value="darurat"/>
+<div class="p-3.5 rounded-2xl border-2 border-surface-container-high bg-surface-container-low peer-checked:border-rose-500 peer-checked:bg-rose-50 peer-checked:shadow-sm interactive-card-hover flex flex-col items-center text-center h-full justify-center">
+<span class="text-2xl mb-1.5">🚑</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Bantuan Darurat</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Tanggap bencana &amp; obat</span>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 2: NOMINAL DONASI & IMPACT CARD -->
+<div class="mb-8 bg-surface-container-low/60 rounded-2xl p-5 sm:p-6 border border-surface-container-high">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-fixed text-secondary font-bold text-sm">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pilih Nominal Donasi</h2>
+</div>
+<span class="text-xs font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">redeem</span> Kelipatan Kebaikan
+              </span>
+</div>
+<!-- Preset Buttons -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+<button class="nominal-btn py-3 px-4 rounded-full font-label-lg text-label-lg font-bold border-2 border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:border-primary transition-all" onclick="selectAmount(20000, '1 Botol Madu Suplemen &amp; Vitamin Sehat')" type="button">
+                Rp 20.000
+              </button>
+<button class="nominal-btn py-3 px-4 rounded-full font-label-lg text-label-lg font-bold border-2 border-primary bg-primary-fixed text-on-primary-fixed shadow-sm transition-all" onclick="selectAmount(50000, '1 Paket Bekal Sehat &amp; Senyuman Balita!')" type="button">
+                Rp 50.000 ⭐
+              </button>
+<button class="nominal-btn py-3 px-4 rounded-full font-label-lg text-label-lg font-bold border-2 border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:border-primary transition-all" onclick="selectAmount(100000, 'Paket Pendidikan Lengkap 1 Bulan')" type="button">
+                Rp 100.000
+              </button>
+<button class="nominal-btn py-3 px-4 rounded-full font-label-lg text-label-lg font-bold border-2 border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:border-primary transition-all" onclick="selectAmount(250000, 'Bantuan Sembako Keluarga + Bibit Sayur')" type="button">
+                Rp 250.000
+              </button>
+</div>
+<!-- Custom Input Field -->
+<div class="relative mb-5">
+<span class="absolute inset-y-0 left-0 flex items-center pl-4 font-bold text-on-surface-variant font-label-lg">Rp</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border-2 border-surface-container-highest rounded-full font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all" id="custom-amount-input" placeholder="Atau ketik nominal kebaikan lainnya (contoh: 75000)" type="number"/>
+</div>
+<!-- Lively Impact Preview Card -->
+<div class="bg-gradient-to-r from-amber-100/90 via-primary-fixed/50 to-secondary-fixed/40 border border-amber-300/40 rounded-xl p-4 flex items-center gap-3.5 transition-all duration-300" id="impact-card">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm text-2xl">
+                🍯
+              </div>
+<div class="flex-1">
+<div class="text-xs font-label-sm uppercase tracking-wider text-primary font-bold">Dampak Langsung Donasimu</div>
+<div class="font-headline-sm text-base sm:text-lg font-bold text-on-surface" id="impact-text">
+                  Donasi Rp 50.000 = 1 Paket Bekal Sehat &amp; Senyuman Balita!
+                </div>
+</div>
+</div>
+</div>
+<!-- STEP 3: METODE PEMBAYARAN KILAT & DATA SINGKAT -->
+<div class="mb-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-tertiary-fixed text-tertiary font-bold text-sm">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bayar Mudah &amp; Kilat</h2>
+<span class="text-xs text-emerald-600 font-label-md font-bold bg-emerald-100 px-2 py-0.5 rounded-full">Bebas Biaya Admin</span>
+</div>
+<!-- Payment Methods Pill Selector -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 mb-6">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="payment_method" type="radio" value="qris"/>
+<div class="p-3 rounded-xl border-2 border-surface-container-high bg-surface-container-lowest peer-checked:border-primary peer-checked:bg-primary-fixed/20 peer-checked:shadow-sm text-center flex flex-col items-center justify-center h-16 transition-all">
+<span class="font-bold text-xs text-primary">⚡ QRIS</span>
+<span class="text-[10px] text-on-surface-variant">Instant Scan</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="payment_method" type="radio" value="gopay"/>
+<div class="p-3 rounded-xl border-2 border-surface-container-high bg-surface-container-lowest peer-checked:border-sky-500 peer-checked:bg-sky-50 peer-checked:shadow-sm text-center flex flex-col items-center justify-center h-16 transition-all">
+<span class="font-bold text-xs text-sky-600">GoPay</span>
+<span class="text-[10px] text-on-surface-variant">1-Klik Terkoneksi</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="payment_method" type="radio" value="ovo"/>
+<div class="p-3 rounded-xl border-2 border-surface-container-high bg-surface-container-lowest peer-checked:border-purple-600 peer-checked:bg-purple-50 peer-checked:shadow-sm text-center flex flex-col items-center justify-center h-16 transition-all">
+<span class="font-bold text-xs text-purple-700">OVO</span>
+<span class="text-[10px] text-on-surface-variant">Push Notifikasi</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="payment_method" type="radio" value="shopeepay"/>
+<div class="p-3 rounded-xl border-2 border-surface-container-high bg-surface-container-lowest peer-checked:border-orange-500 peer-checked:bg-orange-50 peer-checked:shadow-sm text-center flex flex-col items-center justify-center h-16 transition-all">
+<span class="font-bold text-xs text-orange-600">ShopeePay</span>
+<span class="text-[10px] text-on-surface-variant">Saldo &amp; Koin</span>
+</div>
+</label>
+<label class="cursor-pointer col-span-2 sm:col-span-1">
+<input class="peer sr-only" name="payment_method" type="radio" value="va"/>
+<div class="p-3 rounded-xl border-2 border-surface-container-high bg-surface-container-lowest peer-checked:border-secondary peer-checked:bg-secondary-fixed/30 peer-checked:shadow-sm text-center flex flex-col items-center justify-center h-16 transition-all">
+<span class="font-bold text-xs text-secondary">Virtual Account</span>
+<span class="text-[10px] text-on-surface-variant">BCA / Mandiri / BRI</span>
+</div>
+</label>
+</div>
+<!-- Frictionless Short Donor Info Form -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-surface-container-high space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Data Donatur (Super Singkat):</span>
+<label class="flex items-center gap-1.5 cursor-pointer text-xs text-on-surface-variant">
+<input class="rounded text-secondary focus:ring-0 w-3.5 h-3.5" id="anon-check" type="checkbox"/>
+<span>Sembunyikan nama (Hamba Allah)</span>
+</label>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<input class="w-full px-4 py-2.5 bg-surface-container-low border border-surface-container-high rounded-full font-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" id="donor-name" placeholder="Nama Lengkap / Panggilan Ceria" required="" type="text"/>
+<input class="w-full px-4 py-2.5 bg-surface-container-low border border-surface-container-high rounded-full font-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" id="donor-contact" placeholder="Nomor WhatsApp (untuk bukti &amp; doa)" required="" type="text"/>
+</div>
+<input class="w-full px-4 py-2.5 bg-surface-container-low border border-surface-container-high rounded-full font-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" id="donor-wish" placeholder="Tuliskan sebaris doa / harapan manismu (opsional)..." type="text"/>
+</div>
+</div>
+<!-- SUBMIT CTA BUTTON -->
+<div class="text-center pt-2">
+<button class="w-full sm:w-3/4 mx-auto py-4 px-8 rounded-full bg-gradient-to-r from-amber-500 via-primary to-amber-600 text-on-primary font-headline-sm text-headline-sm font-bold shadow-lg shadow-amber-500/25 hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200 flex items-center justify-center gap-2 group" type="submit">
+<span>Kirim Kebaikan Sekarang</span>
+<span class="text-xl group-hover:translate-x-1 transition-transform">💛</span>
+</button>
+<p class="text-xs text-on-surface-variant mt-3 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+              100% Aman &amp; Terenkripsi • Laporan Penyaluran dikirim via WhatsApp
+            </p>
+</div>
+</form>
+</div>
+</section>
+<!-- SUCCESS NOTIFICATION MODAL (Micro-interaction) -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="success-modal">
+<div class="bg-surface-container-lowest max-w-md w-full rounded-3xl p-6 sm:p-8 text-center shadow-2xl border-2 border-primary-fixed animate-bounce-once">
+<div class="w-20 h-20 rounded-full bg-secondary-fixed/50 flex items-center justify-center mx-auto mb-4 text-4xl">
+          🐝🎉
+        </div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Terima Kasih, Insan Kebaikan!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+          Donasi Anda telah terverifikasi dengan manis. Berkah melimpah untuk Anda dan keluarga tercinta!
+        </p>
+<div class="bg-surface-container-low p-4 rounded-2xl mb-6 text-sm text-left font-body-sm">
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Kode Referensi:</span>
+<span class="font-bold text-primary">#BEE-88291</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Status:</span>
+<span class="font-bold text-emerald-600">Berhasil Diterima</span>
+</div>
+</div>
+<button class="w-full py-3 rounded-full bg-primary text-on-primary font-label-lg font-bold" onclick="closeModal()">
+          Tutup &amp; Lihat Dinding Doa ✨
+        </button>
+</div>
+</div>
+<!-- ==================== DINDING DOA TERKINI (WALL OF HAPPINESS) ==================== -->
+<section class="py-12 md:py-16 bg-surface-container-low/50">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm mb-2">
+<span>💌</span> DINDING CINTA &amp; DOA
+            </div>
+<h2 class="font-headline-lg md:text-headline-lg text-headline-lg-mobile font-bold text-on-surface">
+              Dinding Doa Terkini 🌻
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Untaian harapan hangat dan senyum dari para donatur manis Creative Bee.
+            </p>
+</div>
+<a class="mt-4 md:mt-0 inline-flex items-center gap-2 font-label-lg text-label-lg font-bold text-primary hover:text-primary-container" href="#donation-box">
+<span>Tuliskan Doamu Hari Ini</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Sticky Note Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Note 1 (Amber Pastel) -->
+<div class="p-5 rounded-2xl bg-[#FEF3C7] border border-amber-200/80 shadow-sm interactive-card-hover flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-bold text-[#B45309] bg-amber-100/80 px-2.5 py-0.5 rounded-full">Rp 100.000</span>
+<span class="text-xs text-amber-800/60 font-body-sm">5 menit lalu</span>
+</div>
+<p class="font-body-md text-body-md text-stone-800 italic mb-4">
+                "Semoga adik-adik balita tumbuh kuat, ceria, dan sehat selalu. Rezeki berkah untuk kita semua!"
+              </p>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-amber-200/60">
+<span class="w-7 h-7 rounded-full bg-amber-200 flex items-center justify-center text-xs font-bold text-amber-900">SA</span>
+<span class="font-label-md text-label-md font-semibold text-stone-800">Siti Aisyah &amp; Kel.</span>
+</div>
+</div>
+<!-- Note 2 (Mint Teal Pastel) -->
+<div class="p-5 rounded-2xl bg-[#CCFBF1] border border-teal-200/80 shadow-sm interactive-card-hover flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-bold text-[#0F766E] bg-teal-100 px-2.5 py-0.5 rounded-full">Rp 50.000</span>
+<span class="text-xs text-teal-800/60 font-body-sm">18 menit lalu</span>
+</div>
+<p class="font-body-md text-body-md text-stone-800 italic mb-4">
+                "Sedikit manis untuk beasiswa adik-adik pejuang mimpi. Teruslah terbang tinggi seperti lebah madu!"
+              </p>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-teal-200/60">
+<span class="w-7 h-7 rounded-full bg-teal-200 flex items-center justify-center text-xs font-bold text-teal-900">RF</span>
+<span class="font-label-md text-label-md font-semibold text-stone-800">Rizky Febrian</span>
+</div>
+</div>
+<!-- Note 3 (Coral Peach Pastel) -->
+<div class="p-5 rounded-2xl bg-[#FFEDD5] border border-orange-200/80 shadow-sm interactive-card-hover flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-bold text-[#C2410C] bg-orange-100 px-2.5 py-0.5 rounded-full">Rp 250.000</span>
+<span class="text-xs text-orange-800/60 font-body-sm">42 menit lalu</span>
+</div>
+<p class="font-body-md text-body-md text-stone-800 italic mb-4">
+                "In memory of Almarhumah Ibu tercinta. Semoga modal mandiri ini memberi berkah bagi pejuang nafkah."
+              </p>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-orange-200/60">
+<span class="w-7 h-7 rounded-full bg-orange-200 flex items-center justify-center text-xs font-bold text-orange-900">HA</span>
+<span class="font-label-md text-label-md font-semibold text-stone-800">Hamba Allah</span>
+</div>
+</div>
+<!-- Note 4 (Soft Lavender Pastel) -->
+<div class="p-5 rounded-2xl bg-[#EDE9FE] border border-purple-200/80 shadow-sm interactive-card-hover flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-bold text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-full">Rp 50.000</span>
+<span class="text-xs text-purple-800/60 font-body-sm">1 jam lalu</span>
+</div>
+<p class="font-body-md text-body-md text-stone-800 italic mb-4">
+                "Kebaikan kecil yang dilakukan bersama-sama akan membawa dampak luar biasa. Semangat relawan Bee!"
+              </p>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-purple-200/60">
+<span class="w-7 h-7 rounded-full bg-purple-200 flex items-center justify-center text-xs font-bold text-purple-900">DN</span>
+<span class="font-label-md text-label-md font-semibold text-stone-800">Dian &amp; Dimas</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== RINGKASAN TRANSPARANSI CERIA ==================== -->
+<section class="py-12 md:py-16 px-space-lg md:px-margin max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<h2 class="font-headline-lg md:text-headline-lg text-headline-lg-mobile font-bold text-on-surface">
+          Transparansi Bersih &amp; Ceria 🛡️✨
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Kami menjaga setiap rupiah amanahmu dengan audit terbuka, standar operasional bersih, dan dedikasi penuh kasih.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Metric Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-surface-container-high custom-warm-card text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-amber-100 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<div class="font-headline-xl text-primary font-extrabold mb-1">94.2%</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Langsung ke Program</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hanya 5.8% untuk operasional esensial relawan. Standar efisiensi tertinggi bagi yayasan sosial.
+          </p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-surface-container-high custom-warm-card text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-teal-100 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="font-headline-xl text-secondary font-extrabold mb-1">WTP</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Opini Audit Publik</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Audit Keuangan Independen Berpredikat 'Wajar Tanpa Pengecualian' 4 tahun berturut-turut.
+          </p>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-surface-container-high custom-warm-card text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-orange-100 text-tertiary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">update</span>
+</div>
+<div class="font-headline-xl text-tertiary-container font-extrabold mb-1">&lt; 24 Jam</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Update Laporan Cepat</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Dokumentasi foto senyum penerima manfaat dan resi belanja langsung diunggah ke portal publik.
+          </p>
+</div>
+</div>
+<!-- Quick Chapter Outreach Visual Banner -->
+<div class="mt-8 bg-gradient-to-r from-amber-500 via-primary to-secondary text-on-primary rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
+<div class="flex items-center gap-4 text-center sm:text-left">
+<span class="text-4xl hidden sm:inline">🌱</span>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold">Ingin Mengajukan Bantuan untuk Lingkunganmu?</h3>
+<p class="font-body-md text-body-md text-on-primary/90 mt-1">Kami membuka pendaftaran penerima manfaat untuk RT/RW dan komunitas terdekat.</p>
+</div>
+</div>
+<a class="px-6 py-3 rounded-full bg-white text-on-surface font-label-lg text-label-lg font-bold shadow hover:bg-surface-container transition-colors shrink-0" href="#volunteer">
+          Ajukan Komunitas 🤝
+        </a>
+</div>
+</section>
+</main>
+<!-- ==================== FOOTER (Shared Component) ==================== -->
+<footer class="bg-surface-container-low dark:bg-surface-container">
+<div class="w-full max-w-7xl mx-auto px-space-lg md:px-margin py-space-xl flex flex-col space-y-space-lg">
+<div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+<!-- Logo & Tagline -->
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="flex items-center gap-3">
+<img alt="Creative Bee Foundation" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIb6MTrXlVtZLvymsrWAAeTv1dX6aeUtRulV3ppOLmo33qo9OJg8Pp2UpDU7jCjXq8r1TkKdRQRe2adJwp8rJJfnW3xryksrU1-BYip5OYfhs52nuDDTQUay165gECWSwv6bJ2JMo1TRGPeoh3OjrNSEEPV3IMt-ph8Prb7u3YSSJ1jeF2NmrVMFc9gND7qHQRSB5atdIuDzYzPCrx7u6uPLZKyw8-v8RdIzEx9kS_XkPLjOTX6peI_fw"/>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary font-bold">Creative Bee Foundation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant max-w-md text-center md:text-left">
+            Gerakan sosial berbasis kegembiraan dan gotong royong modern. Membawa madu kebaikan nyata dari hati ke hati.
+          </p>
+</div>
+<!-- Links Grid -->
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-center">
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About Us</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Transparency &amp; Financials</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Annual Reports</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Community Chapters</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Careers</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Terms of Kindness</a>
+</div>
+</div>
+<!-- Bottom Copyright Line -->
+<div class="pt-6 border-t border-surface-container dark:border-surface-container-high flex flex-col sm:flex-row items-center justify-between text-xs text-on-surface-variant dark:text-outline-variant gap-3">
+<p>© 2025 Creative Bee Foundation. Spreading joyful, community-first vitality worldwide.</p>
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-amber-500" style="font-variation-settings: 'FILL' 1;">favorite</span> Dibuat dengan cinta untuk kemanusiaan
+          </span>
+</div>
+</div>
+</div>
+</footer>
+<!-- ==================== INTERACTIVE JAVASCRIPT LOGIC ==================== -->
+<script>
+    // Nominal selection handler
+    function selectAmount(amount, impactDesc) {
+      // Clear custom input
+      const customInput = document.getElementById('custom-amount-input');
+      customInput.value = '';
+
+      // Reset button styles
+      document.querySelectorAll('.nominal-btn').forEach(btn => {
+        btn.classList.remove('border-primary', 'bg-primary-fixed', 'text-on-primary-fixed', 'shadow-sm');
+        btn.classList.add('border-outline-variant/50', 'bg-surface-container-lowest', 'text-on-surface');
+      });
+
+      // Highlight clicked button
+      event.currentTarget.classList.remove('border-outline-variant/50', 'bg-surface-container-lowest', 'text-on-surface');
+      event.currentTarget.classList.add('border-primary', 'bg-primary-fixed', 'text-on-primary-fixed', 'shadow-sm');
+
+      // Update impact text
+      const formatted = new Intl.NumberFormat('id-ID').format(amount);
+      document.getElementById('impact-text').innerText = `Donasi Rp ${formatted} = ${impactDesc}`;
+    }
+
+    // Dynamic input updates
+    document.getElementById('custom-amount-input').addEventListener('input', function(e) {
+      const val = parseInt(e.target.value);
+      if (val && val > 0) {
+        document.querySelectorAll('.nominal-btn').forEach(btn => {
+          btn.classList.remove('border-primary', 'bg-primary-fixed', 'text-on-primary-fixed', 'shadow-sm');
+          btn.classList.add('border-outline-variant/50', 'bg-surface-container-lowest', 'text-on-surface');
+        });
+
+        const formatted = new Intl.NumberFormat('id-ID').format(val);
+        document.getElementById('impact-text').innerText = `Donasi Rp ${formatted} = Sedekah luar biasa yang membawa kebahagiaan!`;
+      }
+    });
+
+    // Anonymous toggle checkbox
+    document.getElementById('anon-check').addEventListener('change', function(e) {
+      const nameInput = document.getElementById('donor-name');
+      if (e.target.checked) {
+        nameInput.value = 'Hamba Allah';
+        nameInput.disabled = true;
+      } else {
+        nameInput.value = '';
+        nameInput.disabled = false;
+      }
+    });
+
+    // Modal triggers
+    function triggerDonationSuccess() {
+      document.getElementById('success-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('success-modal').classList.add('hidden');
+    }
+  </script>
+</body></html>
