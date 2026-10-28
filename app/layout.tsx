@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-  display: "swap",
-});
+// const outfit = Outfit({
+//   variable: "--font-outfit",
+//   subsets: ["latin"],
+//   weight: ["500", "600", "700", "800"],
+//   display: "swap",
+// });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
+// const plusJakartaSans = Plus_Jakarta_Sans({
+//   variable: "--font-plus-jakarta",
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Creative Bee Foundation — Berbagi Kebaikan, Menyalurkan Senyuman Manis",
@@ -32,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${outfit.variable} ${plusJakartaSans.variable} scroll-smooth h-full antialiased`}
+      className="scroll-smooth h-full antialiased"
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
