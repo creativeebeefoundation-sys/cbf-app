@@ -45,11 +45,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-semibold text-sm transition-all duration-150 py-1 relative ${
-                  isActive
+                className={`font-semibold text-sm transition-all duration-150 py-1 relative ${isActive
                     ? "text-[#8d4b00] font-bold"
                     : "text-[#554336] hover:text-[#8d4b00]"
-                }`}
+                  }`}
               >
                 {link.name}
                 {isActive && (
@@ -106,11 +105,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`px-3 py-2 rounded-xl text-sm font-semibold transition-colors flex items-center justify-between ${
-                    isActive
+                  className={`px-3 py-2 rounded-xl text-sm font-semibold transition-colors flex items-center justify-between ${isActive
                       ? "bg-amber-100/80 text-[#8d4b00] font-bold"
                       : "text-[#554336] hover:bg-[#f6ece6]"
-                  }`}
+                    }`}
                 >
                   <span>{link.name}</span>
                   {isActive && (
