@@ -106,7 +106,7 @@ export default function TentangKami() {
               Filosofi Hangat
             </span>
             <h2 className="font-headline text-2xl sm:text-3xl md:text-4xl text-[#1f1b17] font-bold">
-              Kenapa Simbol Lebah? 🐝🍯
+              Kenapa Simbol Lebah?
             </h2>
             <p className="text-sm sm:text-base text-[#554336] mt-2">
               Lebah adalah teladan alam terbaik tentang harmoni, ketulusan kerja sama, dan manisnya kontribusi tanpa merusak lingkungan sekitar.
@@ -507,7 +507,7 @@ export default function TentangKami() {
             <span>🌻</span> Selalu Ada Ruang untuk Kebaikan
           </span>
           <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl text-[#1f1b17] font-bold tracking-tight">
-            Pintu Kami Selalu Terbuka untuk Teman Baru! 🤗💛
+            Pintu Kami Selalu Terbuka untuk Teman Baru!
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-[#554336] max-w-2xl mx-auto mt-4 mb-8 leading-relaxed">
             Mau ikut terjun ke lapangan, menyumbang keahlian desain, atau sekadar berbagi cerita hangat? Mari bergandengan tangan bersama Sahabat Lebah!
